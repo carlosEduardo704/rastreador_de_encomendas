@@ -1,0 +1,27 @@
+body {
+    background-color: #00FF7F;
+}
+
+/* nav-bar */
+
+.botao-navbar {
+    background: transparent;
+    border: transparent;
+    color: #FFFAFA;
+}
+
+
+/* HEADER - rodapé*/
+.copyright {
+    color: black;
+}
+.icones_header{
+    width: 30px;
+    padding-right: 10px;
+}
+
+#HEADER {
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+}
