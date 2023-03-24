@@ -10,7 +10,16 @@ body {
     color: #FFFAFA;
 }
 
+ /* Elementos centrais */
 
+#div-maior-elementos-centrais {
+    display: flex;
+    justify-content: center;
+}
+
+.pesquisar {
+    background-color: #7FFF00;
+}
 /* HEADER - rodapé*/
 .copyright {
     color: black;
