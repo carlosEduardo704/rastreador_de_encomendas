@@ -17,9 +17,47 @@ body {
     justify-content: center;
 }
 
+#div-menor-elementos-centrais {
+    position: absolute;
+    bottom: 45%;
+}
+
+.titulo {
+    color: #FFFAFA;
+    font-size: 50px;
+    max-height: 80px;
+    text-align: center;
+}
+
+.texto {
+    color: #FFFAFA;
+    font-size: 30px;
+    text-align: center;
+}
+
+.input {
+    height: 60px;
+    width: 400px;
+    text-align: center;
+    font-size: 20px;
+}
+
+input::placeholder {
+    color: #555555;
+    font-family: sans-serif;
+}
+
+.pesquisar-icone {
+    width: 20px;
+}
+
 .pesquisar {
     background-color: #7FFF00;
+    height: 64px;
+    font-size: 20px;
+    border: solid 1px;
 }
+
 /* HEADER - rodapé*/
 .copyright {
     color: black;
