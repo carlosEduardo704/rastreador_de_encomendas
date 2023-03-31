@@ -18,8 +18,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: solid 1px black;
-    height: 600px;;
+    height: 500px;
 }
 
 #div-menor-elementos-centrais {
@@ -90,6 +89,30 @@ input::placeholder {
     background-color: #D9D9D9;
 }
 
+#como-rastrear {
+    text-align: center;
+}
+
+.divInformacoes {
+    display: row;
+    padding: 20px;
+    padding-top: 0;
+    font-size: 20px;
+    color: #48721d;
+}
+
+h3 {
+    color: #333333;
+}
+
+.icones {
+    width: 150px;
+    color: #48721d;
+}
+
+.p-informacoes {
+    font-family: proxima-nova, Arial, sans-serif;
+}
 
 
 /* HEADER - rodapé*/
@@ -103,5 +126,6 @@ input::placeholder {
 
 #FOOTER {
     padding: 10px;
-    border: solid 1px white;
+    background-color: #333333;
+    width: 100%;
 }
