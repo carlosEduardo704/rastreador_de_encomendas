@@ -1,5 +1,6 @@
 body {
     background-color: #48721D;
+    margin: 0px;
 }
 
 /* nav-bar */
@@ -10,6 +11,13 @@ body {
     color: #FFFAFA;
     font-size: 45px;
     font-family: Dyuthi;
+}
+
+.botao-navbar-cep {
+    background: transparent;
+    border: transparent;
+    color: #FFFAFA;
+    font-size: 20px;
 }
 
  /* Elementos centrais */
@@ -67,7 +75,7 @@ input::placeholder {
 }
 
 .pesquisar {
-    background-color: #7FFF00;
+    background-color: #6eaf2c;
     height: 62px;
     font-size: 20px;
     border: solid 1px;
@@ -126,6 +134,5 @@ h3 {
 
 #FOOTER {
     padding: 10px;
-    background-color: #333333;
-    width: 100%;
+    
 }
