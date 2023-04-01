@@ -1,0 +1,140 @@
+body {
+    background-color: #48721D;
+    margin: 0px;
+}
+
+/* nav-bar */
+
+.botao-navbar {
+    background: transparent;
+    border: transparent;
+    color: #FFFAFA;
+    font-size: 45px;
+    font-family: Dyuthi;
+}
+
+.botao-navbar-cep {
+    background: transparent;
+    border: transparent;
+    color: #FFFAFA;
+    font-size: 20px;
+}
+
+ /* Elementos centrais */
+
+#div-maior-elementos-centrais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+#div-menor-elementos-centrais {
+    display: grid;
+    bottom: 45%;
+    align-content: center;
+    
+}
+
+.titulo {
+    color: #FFFAFA;
+    font-size: 500%;
+    max-height: 20px;
+    text-align: center;
+    font-family: Dyuthi;
+}
+
+.texto {
+    color: #FFFAFA;
+    font-size: 30px;
+    text-align: center;
+    max-height: 20px;
+    
+}
+
+.input {
+    height: 60px;
+    width: 400px;
+    text-align: center;
+    font-size: 20px;
+    border: transparent;
+}
+
+
+input::placeholder {
+    color: #555555;
+    font-family: sans-serif;
+}
+
+.pesquisar-icone {
+    width: 20px;
+}
+
+.pesquisar:hover {
+    background-color: #48721d;
+}
+
+.pesquisar {
+    background-color: #6eaf2c;
+    color: #FFFFFF;
+    font-weight: bold;
+    height: 62px;
+    font-size: 20px;
+    border: solid 1px;
+    border: transparent;
+}
+
+.buttonLoginCadastre_se {
+    background-color: #FFFFFF;
+    margin-inline: 10px;
+    width: 130.9px;
+    height: 50px;
+    font-size: 20px;
+    color: #6EAF2C;
+    font-weight: bold;
+    border: transparent;
+}
+
+.buttonLoginCadastre_se:hover {
+    background-color: #D9D9D9;
+}
+
+#como-rastrear {
+    text-align: center;
+}
+
+.divInformacoes {
+    display: row;
+    padding: 20px;
+    padding-top: 0;
+    font-size: 20px;
+    color: #48721d;
+}
+
+h3 {
+    color: #333333;
+}
+
+.icones {
+    width: 150px;
+    color: #48721d;
+}
+
+.p-informacoes {
+    font-family: proxima-nova, Arial, sans-serif;
+}
+
+
+/* HEADER - rodapé*/
+.copyright {
+    color: black;
+}
+.icones_footer{
+    width: 30px;
+    padding-right: 10px;
+}
+
+#FOOTER {
+    padding: 10px;
+    
+}
