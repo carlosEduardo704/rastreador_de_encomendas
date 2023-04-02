@@ -71,7 +71,7 @@ input::placeholder {
 }
 
 .pesquisar:hover {
-    background-color: #48721d;
+    background-color: rgb(72, 114, 29, 0.0);
 }
 
 .pesquisar {
@@ -84,46 +84,22 @@ input::placeholder {
     border: transparent;
 }
 
-.buttonLoginCadastre_se {
-    background-color: #FFFFFF;
-    margin-inline: 10px;
-    width: 130.9px;
-    height: 50px;
-    font-size: 20px;
-    color: #6EAF2C;
-    font-weight: bold;
-    border: transparent;
-}
-
-.buttonLoginCadastre_se:hover {
-    background-color: #D9D9D9;
-}
-
 #como-rastrear {
+    background-color: #ffffff;
+    padding: 40px;
     text-align: center;
 }
 
-.divInformacoes {
-    display: row;
-    padding: 20px;
-    padding-top: 0;
-    font-size: 20px;
-    color: #48721d;
+.lista {
+    background-color: #fdfdfd;
+    box-shadow: 0 2px 4px rgba(216,216,216,.68);
+    padding: 0.5em 1em 1.5em;
+    font-size: 1.2em;
+    color: #333;
+    list-style-type: none;
+    margin-bottom: 1.1em;
+    width: 70%;
 }
-
-h3 {
-    color: #333333;
-}
-
-.icones {
-    width: 150px;
-    color: #48721d;
-}
-
-.p-informacoes {
-    font-family: proxima-nova, Arial, sans-serif;
-}
-
 
 /* HEADER - rodapé*/
 .copyright {
