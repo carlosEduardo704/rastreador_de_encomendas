@@ -1,0 +1,61 @@
+body {
+    background-color: #48721D;
+    margin: 0px;
+}
+
+
+/* teste
+border: solid 1px black;
+ */
+
+/* nav-bar */
+
+.navBar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    
+}
+
+.divBotaoNavBar {
+    display: flex;
+    width: 60%;
+}
+
+.botaoNavbar {
+    background: transparent;
+    border: transparent;
+    color: #FFFAFA;
+    font-size: 45px;
+    font-family: Dyuthi;
+}
+
+/* novo pacote */
+
+.cadastroPacotes {
+    display: inline-flex;
+    justify-content: space-around;
+    border: solid 1px black;
+    width: 60%;
+    max-width: 100%;
+}
+
+input {
+    display: block;
+    font-size: 20px;
+}
+
+.botaoCadastrar {
+    background-color: #6eaf2c;
+    color: #FFFFFF;
+    font-size: 20px;
+    width: 200%;
+}
+
+.botaoCadastrar:hover{
+    background-color: #48721D;
+}
+
+
+
+
