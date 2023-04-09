@@ -17,41 +17,29 @@
 
     <!-- Novo pacote -->
 
-    <div style="display: flex; justify-content: center;">
+    <div style="display: flex; flex-direction: column; align-items: center; border: solid 1px yellow;">
+        
+        <div style="width: 60%; border: solid 1px black; height: 7vh;">
+            <h3>Novo Pacote</h3>
+        </div>
 
-        <div style="width: 60%;">
+        <div style="width: 60%; display: flex; border: solid 1px yellow; flex-wrap: wrap;">
 
-            <h3 style="font-size: 24px;">Novo Pacote</h3>
-    
-            <div class="cadastroPacotes">
+            
+            <div class="inputsButoes">
+                <input type="text" id="codigo" placeholder="Código de Rastreio">
+            </div>
 
-                <div>
-                    <label for="codigo">Codigo</label>
-                    <input type="text" id="codigo">
-                </div>
+            <div class="inputsButoes">
+                <input type="text" id="codigo" placeholder="Nome do Pacote">
+            </div>
 
-                <div>
-                    <label for="nome">Nome</label>
-                    <input type="text" id="nome">
-                </div>
-
-                <div style="height: 40px; padding-top: 19px;">
-                    <button class="botaoCadastrar">Cadastrar</button>
-                </div>
-                
+            <div class="inputsButoes">
+                <button>Cadastrar</button>
             </div>
 
         </div>
-        
     </div>
-
-    <div style="border: solid 1px red; margin-top: 20px; display: flex; justify-content: center;">
-
-        <div style="border: solid 1px blueviolet; margin: 10px; width: 60%;"></div>
-
-
-    </div>
-
     
 </body>
 </html>

@@ -32,30 +32,31 @@ border: solid 1px black;
 
 /* novo pacote */
 
-.cadastroPacotes {
-    display: inline-flex;
-    justify-content: space-around;
+h3 {
+    font-size: 30px;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.inputsButoes{
+    margin: 1%;
     border: solid 1px black;
-    width: 60%;
-    max-width: 100%;
+    
 }
 
 input {
-    display: block;
-    font-size: 20px;
+    font-size: 25px;
 }
 
-.botaoCadastrar {
-    background-color: #6eaf2c;
-    color: #FFFFFF;
-    font-size: 20px;
-    width: 200%;
+button {
+    font-size: 25px;
+    background-color: #6EAF2C;
+    font-weight: bold;
+    color: #ffffff;
 }
-
-.botaoCadastrar:hover{
-    background-color: #48721D;
-}
-
-
 
 
