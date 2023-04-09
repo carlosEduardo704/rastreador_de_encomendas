@@ -33,6 +33,12 @@ border: solid 1px black;
 
 /* novo pacote */
 
+h2 {
+   font-family: Arial, Helvetica, sans-serif;
+   color: #333333;
+   font-weight: 150;
+}
+
 h3 {
     font-size: 30px;
     font-family: inherit;
@@ -49,11 +55,11 @@ h3 {
     
 }
 
-input {
+.inputsButoes input {
     font-size: 25px;
 }
 
-button {
+.inputsButoes button {
     font-size: 25px;
     background-color: #6EAF2C;
     font-weight: bold;

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacotes</title>
+    <link rel="stylesheet" href="../../static/css/pacotesStyle.css">
+    <script> src="../../static/js/pacotesScript.js" </script>
+</head>
+<body>
+
+    <!-- navbar -->
+    <div class="navBar">
+        <div class="divBotaoNavBar"> <button class="botaoNavbar">PackageTrack</button> </div>
+    </div>
+
+    <!-- Novo pacote -->
+
+    <div style="display: flex; flex-direction: column; align-items: center;">
+        
+        <div style="width: 60%; height: 7vh;">
+            <h3>Novo Pacote</h3>
+        </div>
+
+        <div style="width: 60%; display: flex; flex-wrap: wrap; background-color: #f5f5f5;">
+
+            
+            <div class="inputsButoes">
+                <input type="text" id="codigo" placeholder="Código de Rastreio">
+            </div>
+
+            <div class="inputsButoes">
+                <input type="text" id="codigo" placeholder="Nome do Pacote">
+            </div>
+
+            <div class="inputsButoes">
+                <button>Cadastrar</button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div style="border: solid 1px red; margin-top: 20px; display: flex; justify-content: center;">
+
+        <div style="border: solid 1px blueviolet; width: 60%; ">
+
+            <div style="border: solid 1px yellow; width: 70%; border-radius: 10px; background-color: #6eaf2c;" >
+
+                <div class="divOpcoes">
+                    <ul>
+                        <li>
+                            <a href="">PENDENTES</a>
+                        </li>
+
+                        <li>
+                            <a href="" style="border-bottom: solid 5px #f5f5f5;">SAÍRAM PARA ENTREGA</a>
+                        </li>
+
+                        <li>
+                            <a href="">ENTREGUES</a>
+                        </li>
+                    </ul>
+                </div>
+            
+            
+            </div>
+        
+            <div style="border: solid 1px green; width: 60%;">
+
+                <h2>Pacotes <strong style="color: #000000; font-weight: 900;">Saíram Para Engtrega</strong> <br>
+                    <small>Você tem x objetos que sairam para entrega.</small>
+                </h2>
+    
+            </div>
+        
+        </div>
+
+
+    </div>
+
+    
+</body>
+</html>
