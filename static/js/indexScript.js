@@ -1,6 +1,7 @@
 var usuario = ""
 var token = ""
-var codigo = "QP073635129BR"
+
+// "QP073635129BR"
 
 
 var requestOptions = {
@@ -8,7 +9,18 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("https://api.linketrack.com/track/json?user=teste&token=1abcd00b2731640e886fb41a8a9671ad1434c599dbaa0a0de9a5aa619f29a83f&codigo="+ `${codigo}`, requestOptions)
+function pegaCodigo() {
+  let codigo = document.getElementById("inputCodigo").value;
+
+  return codigo
+}
+
+function rastreamento() {
+
+  let codigo = pegaCodigo()
+
+  fetch("https://api.linketrack.com/track/json?user=carlos_eduardo2761@hotmail.com&token=83429b38f609e7ee3bc0fb8b51e8ce84be546289fdb2a40207b0f4bc0c0452ad&codigo="+ `${codigo}`, requestOptions)
   .then(response => response.json())
-  .then(data => console.log(data.eventos[0]))
-  .catch(error => console.log('error', error));
+  .then(data => console.log(data.eventos))
+  .catch(error => console.log('error', error))
+}
