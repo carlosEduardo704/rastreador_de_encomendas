@@ -63,4 +63,17 @@ border: solid 1px black;
     width: 50%;
 }
 
+.spanStatus {
+    color: #6EAF2C;
+    font-size: 30px;
+}
+
+li {
+    list-style-type: none;
+    border-bottom: dotted 1px black;
+    display: grid;
+    margin: 5px;
+    padding: 15px;
+    
+}
 

@@ -1,6 +1,3 @@
-var usuario = ""
-var token = ""
-
 // "QP073635129BR"
 
 
