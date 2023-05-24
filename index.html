@@ -12,7 +12,7 @@
     <!-- navbar -->
     <div id="nav-bar">
         <button class="botao-navbar">PackageTrack</button>
-        <button class="botao-navbar-cep">Busca CEP</button>
+        <!-- <button class="botao-navbar-cep">Busca CEP</button> -->
     </div>
 
     <!-- elementos centrais rastreamento -->
@@ -24,15 +24,17 @@
 
             <div style="display: inline-flex;">
                 <input type="text" class="input" placeholder="Digite o código de rastreio" id="inputCodigo">
-            <button class="pesquisar" id="botaoPesquisar" onclick="rastreamento()"> 
+            <button class="pesquisar" id="botaoPesquisar" onclick="checaCodigo()"> 
                 <img src="https://cdn-icons-png.flaticon.com/512/49/49116.png" class="pesquisar-icone"> Pesquisar</button>
             </div>
-
+            <span id="errorMessage" style="color: red;"></span>
+            
+<!-- 
             <div style="display: inline-flex; justify-content: center; padding: 10px;">
                 <button class="buttonLoginCadastre_se">Login</button>
                 <button class="buttonLoginCadastre_se">Cadastre-se</button>
 
-            </div>
+            </div> -->
 
         </div>
     </div>
@@ -40,9 +42,9 @@
     <!-- Seção de informações -->
     <section id="como-rastrear" style="background-color: #ffffff; padding: 40px;">
         <p style="font-size: 30px; color: #48721d; font-weight: bold;">
-            Como rastrear objetos, encomendas ou pacotes no PackageTrack?</p>
+            Como rastrear objetos, encomendas ou pacotes com o PackageTrack?</p>
 
-        <div style="display: inline-flex; width: 70%;">
+        <div style="display: inline-flex; width: 70%; justify-content: center;">
 
             <div class="divInformacoes">
                 <h3>Cadastre os códigos <br> dos objetos </h3>
@@ -51,19 +53,19 @@
                     Quer rastrear sua encomenda? <br> Cadastre o código de rastreamento e organizaremos tudo para você!</p>
             </div>
 
-            <div class="divInformacoes">
+            <!-- <div class="divInformacoes">
                 <h3>Correios, China Post, Aliexpress, Shopee e GearBest</h3>
                 <i> <img class="icones" src="https://cdn-icons-png.flaticon.com/512/2326/2326138.png"></i>
                 <p class="p-informacoes">Tenha  informações sobre seus pacotes.
                     <br> Gerencie todas as suas encomendas em um só lugar!</p>
-            </div>
+            </div> -->
 
-            <div class="divInformacoes">
+            <!-- <div class="divInformacoes">
                 <h3>Tudo isso acompanhado de notificações personalizadas</h3>
                 <i><img class="icones" src="https://cdn-icons-png.flaticon.com/512/2645/2645890.png"></i>
                 <p class="p-informacoes">Seja notificado todas as vezes que ocorrer qualquer mudança nos seus rastreios. 
                     <br> O PackageTrack te notificará pelo email.</p>
-            </div>
+            </div> -->
         </div>
     </section>
 
