@@ -18,41 +18,43 @@
 
     <!-- Novo pacote -->
 
-    <div style="display: flex; flex-direction: column; align-items: center; width: 80%;">
+    <div id="divMaior">
 
-        <div style="width: 50%; display: inline-flex;  background-color: #f5f5f5; border-radius: 5px; margin: 10px;">
+        <div id="divPesquisar">
 
             
             <div class="textoPesquisar">
-                <h3>Pesquisar Pacote:</h3>
+                <h3>Novo Pacote:</h3>
             </div>
 
             <div class="inputsButoes">
-                <input type="text" id="codigo" placeholder="Nome do Pacote">
-                <button>Pesquisar</button>
+                <input type="text" id="inputCodigo" placeholder="AB123456789CD">
+                <button onclick="checaCodigo()">Pesquisar</button>
             </div>
-
+            
         </div>
 
         <!-- Pacote -->
         <div class="divs">
-            <h2 id="pacote">Pacote</h2>
+            <h2 id="pacote">pacote</h2>
         </div>
 
         <!-- Situacao Pacote -->
-        <div class="divs" id="situacaoPacote">Situacao Pacote</div>
+        <div class="divs">
+            <span id="situacaoPacote" ></span>
+        </div>
 
         <hr>
 
         <div class="divs">
             <!-- Historico do pacote -->
-            <div style="text-align: center;">
-                <h3>Historico do Pacote</h3>
+            <div style="text-align: center; font-size: 25px;">
+                <h3>Histórico do Pacote</h3>
             </div>
         </div>
 
         <!-- Atulizaçoes -->
-        <div id="root">
+        <div class="divs">
             <ul id="informacoesPacotes"></ul>
         </div>
 
