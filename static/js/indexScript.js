@@ -1,23 +1,35 @@
-// "QP073635129BR"
+// Funcão para checar se o codigo é válido.
+function checaCodigo(){
+    const codigo = document.getElementById('inputCodigo').value.toUpperCase();
+    localStorage.setItem('codigo', codigo);
 
+    if(codigo.length == 13){
 
-var requestOptions = {
-  method: 'GET',
-  redirect: 'follow'
-};
+        // Informações para API
+        var requestOptions = {
+        method: 'GET',
+        redirect: 'follow'
+        };
 
-function pegaCodigo() {
-  let codigo = document.getElementById("inputCodigo").value;
+        let user = 'carlos_eduardo2761@hotmail.com';
+        let token = '83429b38f609e7ee3bc0fb8b51e8ce84be546289fdb2a40207b0f4bc0c0452ad';
+        let apiLink = `https://api.linketrack.com/track/json?user=${user}&token=${token}&codigo=${codigo}`;
 
-  return codigo
-}
+        // API
+        fetch(apiLink, requestOptions)
+            .catch(error => {
+            let elemento = document.getElementById('errorMessage');
+            return elemento.innerHTML = 'Código inválido!'
+            })
+            .then(data => {
+                window.location.href = 'templates/rastreamento.html'      
+            })
+        
+    }
 
-function rastreamento() {
+    else{
+        let elemento = document.getElementById('errorMessage');
+        return elemento.innerHTML = 'Código inválido!'
+    }
 
-  let codigo = pegaCodigo()
-
-  fetch("https://api.linketrack.com/track/json?user=carlos_eduardo2761@hotmail.com&token=83429b38f609e7ee3bc0fb8b51e8ce84be546289fdb2a40207b0f4bc0c0452ad&codigo="+ `${codigo}`, requestOptions)
-  .then(response => response.json())
-  .then(data => console.log(data.eventos))
-  .catch(error => console.log('error', error))
 }
