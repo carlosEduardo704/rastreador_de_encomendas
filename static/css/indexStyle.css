@@ -1,5 +1,5 @@
 body {
-    background-color: #48721D;
+    background-color: #006400;
     margin: 0px;
 }
 
@@ -55,7 +55,6 @@ body {
 .input {
     height: 60px;
     width: 400px;
-    text-align: center;
     font-size: 20px;
     border: transparent;
 }
