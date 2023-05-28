@@ -135,3 +135,33 @@ h3 {
     padding: 10px;
     
 }
+
+/* Concertando design para telas menores */
+
+@media (max-width: 600px) {
+    .botao-navbar {
+        font-size: 31.5px;
+    }
+
+    .titulo {
+        font-size: 350%;
+    }
+
+    .texto{
+        font-size: 21px;
+    }
+
+    .input {
+        font-size: 14px;
+        width: 280px;
+    }
+
+    .pesquisar-icone {
+        width: 14px;
+    }
+
+    .pesquisar {
+        font-size: 14px;
+        height: 43.4;
+    }
+}
