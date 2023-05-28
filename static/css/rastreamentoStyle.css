@@ -108,7 +108,7 @@ li {
     #divMaior {
         display: flex;
         flex-direction: column;
-        align-items: start;
+        align-items: center;
         padding: 5px;
         width: 80%;
         flex-wrap: wrap;
