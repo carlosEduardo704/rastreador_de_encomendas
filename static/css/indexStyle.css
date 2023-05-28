@@ -140,28 +140,28 @@ h3 {
 
 @media (max-width: 600px) {
     .botao-navbar {
-        font-size: 31.5px;
+        font-size: 27px;
     }
 
     .titulo {
-        font-size: 350%;
+        font-size: 300%;
     }
 
     .texto{
-        font-size: 21px;
+        font-size: 18px;
     }
 
     .input {
-        font-size: 14px;
-        width: 280px;
+        font-size: 12px;
+        width: 240px;
     }
 
     .pesquisar-icone {
-        width: 14px;
+        width: 12px;
     }
 
     .pesquisar {
-        font-size: 14px;
-        height: 43.4;
+        font-size: 12px;
+        height: 37.2;
     }
 }
