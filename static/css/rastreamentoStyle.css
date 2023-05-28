@@ -103,3 +103,14 @@ li {
     padding: 10px;
     
 }
+
+@media (max-width: 600px) {
+    #divMaior {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 5px;
+        width: 80%;
+        flex-wrap: wrap;
+    }
+}
