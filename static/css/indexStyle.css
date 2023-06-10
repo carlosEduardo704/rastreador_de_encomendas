@@ -53,10 +53,10 @@ body {
 }
 
 .input {
-    height: 60px;
+    height: 58px;
     width: 400px;
     font-size: 20px;
-    border: transparent;
+    border: solid 1px black;
 }
 
 
@@ -77,8 +77,13 @@ input::placeholder {
     background-color: #6eaf2c;
     height: 62px;
     font-size: 20px;
-    border: solid 1px;
+    border: solid 1px black;
     border: transparent;
+    font-weight: bold;
+}
+
+#botaoPesquisar {
+    border: solid 1px;
 }
 
 .buttonLoginCadastre_se {
