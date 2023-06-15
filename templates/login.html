@@ -23,10 +23,12 @@
             
             <label for="senha" class="label">Senha</label>
             <input type="password" class="inputs" id="senha">
+            <span id="errorMessage" style="color: red;"></span>
 
             <div style="text-align: center;">
-                <button id="Login">Login</button>
-                <p>Ainda não possui conta? <a href="file:///home/carlos/Documents/GitHub/sites/rastreador_de_encomendas/templates/register.html" style="color: #6EAF2C;">Registre-se!</a></p>
+                <button id="Login" onclick="checa_login(email, senha)">Login</button>
+                <p>Ainda não possui conta? <a href="file:///home/carlos/Documents/GitHub/sites/rastreador_de_encomendas/
+                    templates/register.html" style="color: #6EAF2C;">Registre-se!</a></p>
             </div>
         </div>
 
