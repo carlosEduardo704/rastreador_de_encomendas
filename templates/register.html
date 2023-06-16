@@ -25,10 +25,12 @@
             <input type="email" class="inputs" id="email">
 
             <label for="senha" class="label">Senha</label>
-            <input type="password" class="inputs" id="senha">
+            <input type="password" class="inputs" id="senha" oninput="checaSenha('senha', 'Senha')">
+            <span id="errorMessageSenha" style="color: red;"></span>
             
             <label for="cSenha" class="label">Confirmação da senha</label>
-            <input type="password" class="inputs" id="cSenha">
+            <input type="password" class="inputs" id="cSenha" oninput="checaSenha('cSenha', 'cSenha')">
+            <span id="errorMessagecSenha" style="color: red;"></span>
 
 
             <div style="text-align: center;">
