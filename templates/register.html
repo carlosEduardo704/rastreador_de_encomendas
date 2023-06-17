@@ -23,18 +23,19 @@
 
             <label for="email" class="label">E-mail</label>
             <input type="email" class="inputs" id="email">
+            <span id="errorMessageEmail" style="color: red;"></span>
 
             <label for="senha" class="label">Senha</label>
-            <input type="password" class="inputs" id="senha" oninput="checaSenha('senha', 'Senha')">
+            <input type="password" class="inputs" id="senha" oninput="checaSenha('Senha')">
             <span id="errorMessageSenha" style="color: red;"></span>
             
             <label for="cSenha" class="label">Confirmação da senha</label>
-            <input type="password" class="inputs" id="cSenha" oninput="checaSenha('cSenha', 'cSenha')">
+            <input type="password" class="inputs" id="cSenha" oninput="checaSenha('cSenha')">
             <span id="errorMessagecSenha" style="color: red;"></span>
 
 
             <div style="text-align: center;">
-                <button id="criarConta">Criar conta</button>
+                <button id="criarConta" onclick="checaEmail('email')">Criar conta</button>
                 <p>Ja possui conta? <a href="/home/carlos/Documents/GitHub/sites/rastreador_de_encomendas/templates/login.html" style="color: #6EAF2C;">Faça login!</a></p>
             </div>
         </div>       
