@@ -1,4 +1,6 @@
 function checaEmail(id){
+
+    let isEmailValid = false;
     // API settings
     
     let myHeaders = new Headers();
@@ -23,9 +25,11 @@ function checaEmail(id){
                 return false
             }
             else{
-                return true;
+                isEmailValid = true;
+                console.log(isEmailValid)
             }
         })
+    console.log(isEmailValid);
 }
 
 function checaSenha(id){
@@ -37,35 +41,31 @@ function checaSenha(id){
 
     let senha = document.getElementById('senha').value;
     let cSenha = document.getElementById('cSenha').value;
+    let isSenhaValid = false;
 
     let element = document.getElementById(`errorMessage${id}`);
     if(senha.length < 8){
         element.innerHTML = 'A senha deve conter no mínimo 8 caracteres!'
-        return false
     }
     else if(upperCases.test(senha) == false){
         element.innerHTML = 'A senha deve conter pelo menos 1 letra maiúscula!'
-        return false
     }
     else if(lowerCase.test(senha) == false){
         element.innerHTML = 'A senha precisa conter pelo menos 1 letra minúscula!'
-        return false
     }
     else if(numbers.test(senha) == false){
         element.innerHTML = 'A senha deve conter pelos menos 1 número!'
-        return false
     }
     else if(specialCharacters.test(senha) == false){
         element.innerHTML = 'A senha deve conter pelo menos 1 caractere especial!'
-        return false
     }
     else if(senha != cSenha) {
         element.innerHTML = 'As senhas não coincidem!'
-        return false
     }
     else{
         element.innerHTML = ''
-        return true;
+        isSenhaValid = true
+        return isSenhaValid;
     }
    
 }
