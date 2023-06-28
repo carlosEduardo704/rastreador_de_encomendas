@@ -65,15 +65,23 @@ body {
 #pacote{
     font-size: 30px;
 }
-#situacaoPacote{
-    font-size: 20px;
+
+/* #situacaoPacote{
+    font-size: 40px;
     font-weight: bold;
     color: #6EAF2C;
+} */
+
+.imgStatus {
+    width: 50px;
 }
 
-.spanStatus {
+.statusPacote {
     color: #6EAF2C;
     font-size: 30px;
+    font-weight: bold;
+    font-family: proxima-nova,Arial,sans-serif;
+    margin: 10px;
 }
 
 ul{

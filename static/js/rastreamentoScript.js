@@ -11,25 +11,28 @@ document.addEventListener('DOMContentLoaded', function(event){
 
 // Funcões que criam elementos
 
-function divDataHora(data, hora){
-    const divElement = document.createElement('span');
-    divElement.classList.add('spanDataHora');
-    divElement.innerHTML = `${data} ${hora}`
-    return divElement
+function spanDataHora(data, hora){
+    const spanElement = document.createElement('span');
+    spanElement.classList.add('spanDataHora');
+    spanElement.innerHTML = `${data} ${hora}`
+    return spanElement
 }
 
-function divLocal(local){
-    const divElement = document.createElement('span');
-    divElement.classList.add('spanLocal')
-    divElement.innerHTML = `${local}`
-    return divElement
+function spanLocal(local){
+    const spanElement = document.createElement('span');
+    spanElement.classList.add('spanLocal')
+    spanElement.innerHTML = `${local}`
+    return spanElement
 }
 
 function divStatus(status){
-    const divElement = document.createElement('span');
-    const strongElement = document.createElement('strong');
-
+    const divElement = document.createElement('div');
     divElement.classList.add('spanStatus')
+
+    const strongElement = document.createElement('strong');
+    strongElement.classList.add('statusPacote')
+
+    divElement.append(checaStatusImg(status))
     divElement.appendChild(strongElement)
     strongElement.innerHTML = `${status}`
     return divElement
@@ -52,16 +55,16 @@ fetch(apiLink, requestOptions)
     .then(response => response.json())
     .then(dados => {
         const dat = dados.eventos;
-        const situacao = document.getElementById('situacaoPacote');
-        situacao.textContent = dat[0].status;
+        // const situacao = document.getElementById('situacaoPacote');
+        // situacao.textContent = dat[0].status;
         
         for(let i = 0; i < dados.eventos.length; i++){
             const dat = dados.eventos[i];
             const elemento = document.getElementById('informacoesPacotes');
             const liElement = document.createElement('li');
             elemento.appendChild(liElement)
-            liElement.appendChild(divDataHora(dat.data, dat.hora))
-            liElement.appendChild(divLocal(dat.local))
+            liElement.appendChild(spanDataHora(dat.data, dat.hora))
+            liElement.appendChild(spanLocal(dat.local))
             liElement.appendChild(divStatus(dat.status))
 
         }
@@ -92,4 +95,28 @@ function checaCodigo(){
         alert('Código inválido')
     }
 
+}
+
+function checaStatusImg(statusImg){
+    const imgElement = document.createElement('img');
+    imgElement.classList.add('imgStatus');
+
+    if(statusImg.includes('entregue')){
+        imgElement.src = 'https://storage.cloud.google.com/package-track/entregue.webp';
+        return imgElement
+    }else if(statusImg.includes('saiu para entrega')){
+        imgElement.src = 'https://storage.cloud.google.com/package-track/saiu_entregar.webp';
+        return imgElement
+    }else if(statusImg.includes('não localizado')){
+        imgElement.src = 'https://storage.cloud.google.com/package-track/nao_localizado.webp';
+        return imgElement
+    }else if(statusImg.includes('Em trânsito') || statusImg.includes('Fiscalização') || statusImg.includes('encaminhado')){
+        imgElement.src = 'https://storage.cloud.google.com/package-track/em_transito.webp';
+        return imgElement
+    }else if(statusImg.includes('postado') || statusImg.includes('recebido')){
+        imgElement.src = 'https://storage.cloud.google.com/package-track/postado.webp';
+        return imgElement
+    }else {
+        return ''
+    }
 }
