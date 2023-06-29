@@ -6,39 +6,6 @@ document.addEventListener('DOMContentLoaded', function(event){
 
 })
 
-
-
-
-// Funcões que criam elementos
-
-function spanDataHora(data, hora){
-    const spanElement = document.createElement('span');
-    spanElement.classList.add('spanDataHora');
-    spanElement.innerHTML = `${data} ${hora}`
-    return spanElement
-}
-
-function spanLocal(local){
-    const spanElement = document.createElement('span');
-    spanElement.classList.add('spanLocal')
-    spanElement.innerHTML = `${local}`
-    return spanElement
-}
-
-function divStatus(status){
-    const divElement = document.createElement('div');
-    divElement.classList.add('spanStatus')
-
-    const strongElement = document.createElement('strong');
-    strongElement.classList.add('statusPacote')
-
-    divElement.append(checaStatusImg(status))
-    divElement.appendChild(strongElement)
-    strongElement.innerHTML = `${status}`
-    return divElement
-}
-
-
 // Configurações API
 var requestOptions = {
     method: 'GET',
@@ -97,7 +64,46 @@ function checaCodigo(){
 
 }
 
+
+// Funções que criam elementos.
+
+function spanDataHora(data, hora){
+    // A função que cria um elemento 'span' com os valores de 'data e hora' da API e retorna o mesmo.
+
+    const spanElement = document.createElement('span');
+    spanElement.classList.add('spanDataHora');
+    spanElement.innerHTML = `${data} ${hora}`
+    return spanElement
+}
+
+function spanLocal(local){
+    // A função cria um elemento 'span' com o valor 'local' da API e retorna o mesmo.
+
+    const spanElement = document.createElement('span');
+    spanElement.classList.add('spanLocal')
+    spanElement.innerHTML = `${local}`
+    return spanElement
+}
+
+function divStatus(status){
+    // Aqui a função cria uma div onde serão armazenados os valores correspondentes ao status do pacote.
+
+    const divElement = document.createElement('div');
+    divElement.classList.add('spanStatus')
+
+    const strongElement = document.createElement('strong');
+    strongElement.classList.add('statusPacote')
+
+    divElement.append(checaStatusImg(status))
+    divElement.appendChild(strongElement)
+    strongElement.innerHTML = `${status}`
+    return divElement
+}
+
+// Função para checar qual imagem deve ser colocada ao lado do status do pacote.
+
 function checaStatusImg(statusImg){
+    // Essa função cria um elemento 'img' e depois o retorna.
     const imgElement = document.createElement('img');
     imgElement.classList.add('imgStatus');
 
