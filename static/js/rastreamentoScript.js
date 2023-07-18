@@ -108,19 +108,19 @@ function checaStatusImg(statusImg){
     imgElement.classList.add('imgStatus');
 
     if(statusImg.includes('entregue')){
-        imgElement.src = 'https://storage.cloud.google.com/package-track/entregue.webp';
+        imgElement.src = '../images/entregue.webp';
         return imgElement
     }else if(statusImg.includes('saiu para entrega')){
-        imgElement.src = 'https://storage.cloud.google.com/package-track/saiu_entregar.webp';
+        imgElement.src = '../images/saiu_entregar.webp';
         return imgElement
     }else if(statusImg.includes('não localizado')){
-        imgElement.src = 'https://storage.cloud.google.com/package-track/nao_localizado.webp';
+        imgElement.src = '../images/nao_localizado.webp';
         return imgElement
     }else if(statusImg.includes('Em trânsito') || statusImg.includes('Fiscalização') || statusImg.includes('encaminhado')){
-        imgElement.src = 'https://storage.cloud.google.com/package-track/em_transito.webp';
+        imgElement.src = '../images/em_transito.webp';
         return imgElement
     }else if(statusImg.includes('postado') || statusImg.includes('recebido')){
-        imgElement.src = 'https://storage.cloud.google.com/package-track/postado.webp';
+        imgElement.src = '../images/postado.webp';
         return imgElement
     }else {
         return ''
