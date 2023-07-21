@@ -122,6 +122,9 @@ function checaStatusImg(statusImg){
     }else if(statusImg.includes('postado') || statusImg.includes('recebido')){
         imgElement.src = '../images/postado.webp';
         return imgElement
+    }else if(statusImg.includes('aguardando')){
+        imgElement.src = '../images/aguardando_retirada.webp';
+        return imgElement
     }else {
         return ''
     }
